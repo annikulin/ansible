@@ -93,6 +93,8 @@ options:
         commands when issuing a command to the network CLI.  If the command
         does not return in timeout seconds, an error is generated.
     default: 120
+    vars:
+      - name: ansible_httpapi_timeout
   become:
     type: boolean
     description:
